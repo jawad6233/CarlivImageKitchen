@@ -1,0 +1,35 @@
+##############################################################################
+#                                                                            #
+#                 Carliv Image Kitchen for Android v0.1                      #
+#              for android phones copyright©2015 carliv@xda                  #
+#             including support for MTK powered phones images                #
+#                            WINDOWS version                                 #
+#                                                                            #
+##############################################################################	
+	
+	To use this Android images kitchen is very easy. 
+First, place your image files in the root of this Tool folder, just where the scripts are.
+ATTENTION! The images names have to be without spaces (use underscores or dashes). 
+Then just drag-and-drop the image you want to unpack over the correct script: if it is a MTK powered phone over { unpack_MTK_img.bat }, or for other kind of phones over { unpack_img.bat }. 
+NOTE: few new MTK phones, like AndroidOne project (sprout) doesn't have MTK header and you have to use the regular script for them { unpack_img.bat }.
+
+	After finish your modding job, to repack the image do the same, but this time drag-and-drop the resulted folder over the correct script: { repack_MTK_img.bat } for MTK phones and { repack_img.bat } for other kind.
+	The script will prompt you to enter the desired name for the new repacked image: type a name without the extension ".img" and also without spaces; any name but be carefull to include the type of image in it - "boot" or "recovery". Example: "boot_stock-220115" or "carliv-recovery_30" or "new-boot" or "twrp-recovery", etc.
+>>> This applies also to images you want to unpack. Don't use abstract names like "blue.img" or "seaside.img", use names which contains the image type inside, and this way it will be easier for you to understand what you are doing there.
+	If you don't want to unpack the image but only to see or to check it's informations (offsets, sizes, addresses, cmdline, etc.) for various reasons, just drag-and-drop that image over the { image_info.bat } and you will see all these on terminal. Also a text file with all informations will be saved in utility's root folder.
+	If you want to clear the Tool folder, double click on  { clean_all.bat }, and all the working folders and files created by scripts will be deleted. All but your initial images and the repacked images. These you have to decide by yourself how to handle (delete, copy, move, etc.).
+	
+	My tool doesn't have restrictions on placement. For me it worked in last partition, in sub-subfolder, without problems.
+	Please respect my work and if you use it don't forget to hit the THANKS button in my thread or to make a donation to buy me a coffee. And if you take it and share it on other sites, or integrate it in other tools, give proper credits for my work.
+	
+	I built from source every working module, and the archiving part (gzip, xz, bzip2 + cygwin dependencies are from the latest cygwin release).
+	
+##############################################################################
+#                                CREDITS                                     #
+#  * michfood from xda.developers for the initial ideea;                     #
+#  * osm0sis from xda.developers for his Android Image Kitchen, which gave   #
+#  me some ideeas;                                                           #
+#  * Android Open Source Project and Omnirom for the initial source code     #
+#  of binaries;                                                              #
+##############################################################################		
+	
