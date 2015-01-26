@@ -1,0 +1,29 @@
+#!/bin/bash
+##########################################################
+#                                                        #
+#           Carliv Image Kitchen for Android             #
+#     boot+recovery images copyright-2015 carliv@xda     #
+#    including support for MTK powered phones images     #
+#                                                        #
+##########################################################
+cd "$PWD";
+###########################################################
+echo " ";
+echo "**********************************************************";
+echo "*                                                        *";
+echo "*         Carliv Image Kitchen for Android v0.1          *";
+echo "*     boot+recovery images copyright-2015 carliv@xda     *";
+echo "*    including support for MTK powered phones images     *";
+echo "*                      LINUX version                     *";
+echo "*           Cleaning the working folder script           *";
+echo "*                                                        *";
+echo "**********************************************************";     
+###########################################################
+find . -maxdepth 1 -type f ! -name "clean_all" ! -name "image_info" ! -name "repack_img" ! -name "repack_MTK_img" ! -name "unpack_img" ! -name "unpack_MTK_img" ! -name "Instructions.md" ! -name "*.img" -exec rm -f {} \;
+
+find . -maxdepth 1 -type d ! -name ".bin" ! -name "." ! -name ".*" -exec rm -rf {} \;
+###########################################################
+echo " ";
+echo "Done! Your working directory is clean now.";
+echo " ";
+sleep 1;
